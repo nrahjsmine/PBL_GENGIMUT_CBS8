@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Form - Le Mans Rental Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Le Mans Rental</div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="form.html">Booking Form</a>
+        <a href="rentals.html">My Rentals</a>
+        <a href="index.html">Logout</a>
+        <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <!-- Booking Form -->
+  <div class="form-container">
+    <h2>Vehicle Booking Form</h2>
+    <form action="#" method="post">
+      
+      <!-- Name -->
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <!-- Email -->
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- Phone -->
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <!-- Password -->
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required minlength="6">
+
+      <!-- Vehicle Options -->
+<label>Select Vehicle</label>
+<div class="vehicle-options">
+  <label>
+    <input type="radio" name="vehicle" value="ferrari" required>
+    <img src="ferrari.jpg" alt="ferrari">
+    <p>Ferrari 296</p>
+  </label>
+
+  <label>
+    <input type="radio" name="vehicle" value="porsche992">
+    <img src="porsche992.jpg" alt="porsche992">
+    <p>Porsche 992GT3 RS </p>
+  </label>
+
+  <label>
+    <input type="radio" name="vehicle" value="ford">
+    <img src="ford.jpg" alt="ford">
+    <p>Ford GT40 MKII</p>
+  </label>
+
+  <label>
+    <input type="radio" name="vehicle" value="Porsche963">
+    <img src="porsche963.jpg" alt="porsche963">
+    <p>Porsche 963 Road Car</p>
+  </label>
+</div>
+
+
+      <!-- Pickup Date -->
+      <label for="pickup">Pickup Date</label>
+      <input type="date" id="pickup" name="pickup" required>
+
+      <!-- Duration -->
+      <label for="days">Number of Days</label>
+      <input type="number" id="days" name="days" min="1" max="30" required>
+
+       
+      <!-- Payment Method -->
+      <label>Payment Method:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="payment" value="credit" required> Credit/Debit Card</label>
+        <label><input type="radio" name="payment" value="cash"> Cash</label>
+      </div>
+
+      
+      <!-- Buttons -->
+      <div class="form-buttons">
+        <button type="submit">Submit Booking</button>
+        <button type="reset" class="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

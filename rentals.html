@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Rentals - Le Mans Rental Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Le Mans Rental</div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="form.html">Booking Form</a>
+        <a href="rentals.html" class="active">My Rentals</a>
+        <a href="index.html">Logout</a>
+        <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <!-- Rentals Page -->
+  <div class="form-container">
+    <h2>My Rentals</h2>
+
+    <!-- Search Box  -->
+    <div class="search-box">
+      <input type="text" placeholder="Search booking by name or vehicle...">
+      <button type="button">Search</button>
+    </div>
+
+    <!-- Rentals Table -->
+    <table class="rental-table">
+      <thead>
+        <tr>
+          <th>Booking ID</th>
+          <th>Name</th>
+          <th>Vehicle</th>
+          <th>Pickup Date</th>
+          <th>Days</th>
+          <th>Payment</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--bookings  -->
+        <tr>
+          <td>I01</td>
+          <td>Reza Ariellano</td>
+          <td>Ferrari 296</td>
+          <td>2025-10-05</td>
+          <td>3</td>
+          <td>Credit/Debit Card</td>
+          <td>
+            <button class="view-btn">View</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>I02</td>
+          <td>Nur Aina Syafiqa</td>
+          <td>Ford GT40 MKII</td>
+          <td>2025-10-08</td>
+          <td>2</td>
+          <td>Cash</td>
+          <td>
+            <button class="view-btn">View</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>I03</td>
+          <td>Norah Jasmine</td>
+          <td>Porsche 992GT3 RS</td>
+          <td>2025-10-12</td>
+          <td>5</td>
+          <td>Credit/Debit Card</td>
+          <td>
+            <button class="view-btn">View</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
